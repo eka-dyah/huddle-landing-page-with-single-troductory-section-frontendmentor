@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-image: url(./images/bg-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+}
+
+.headings {
+    font-family: 'Poppins', sans-serif;
+}
+
+p,
+button {
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav img {
+    width: 200px;
+    height: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 33px 65px;
+}
+
+.content {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.content div {
+    margin: 0 0 10% 5%;
+    color: white;
+}
+
+.content div h1 {
+    line-height: 1;
+    font-size: 44px;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: mediumpurple;
+    background-color: white;
+    border: 1px solid transparent;
+    box-shadow: 2px 6px #00000040;
+    margin-top: 10px;
+}
+
+.content div p {
+    font-size: 20.5px;
+    line-height: 1.5;
+}
+
+.sosmed {
+    align-self: flex-end;
+    display: flex;
+    margin-top: 5px;
+}
+
+.sosmed div i {
+    width: 35px;
+    padding: 10px 0;
+    border: 1px solid #ddd;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 5px 20px 5px;
+    color: white;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 1150px) {
+    .content img {
+        width: 525px;
+    }
+}
+
+@media (max-width: 930px) {
+    body {
+        background-image: url(./images/bg-mobile.svg);
+    }
+    .content {
+        flex-direction: column;
+    }
+    .content img {
+        min-width: 330px;
+        width: 100%;
+    }
+    .content div {
+        margin-top: 60px;
+        text-align: center;
+    }
+    .content div h1 {
+        font-size: 40px;
+    }
+    .content div p {
+        margin: 40px 0;
+    }
+    button {
+        width: 250px;
+        height: 60px;
+        border-radius: 30px;
+        font-size: 18px;
+    }
+    .sosmed {
+        align-self: center;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+}
+
+@media (max-width: 600px) {
+    .content div h1 {
+        font-size: 35px;
+    }
+}
